@@ -38,9 +38,10 @@ void Permutation (vector<int> const& arr, vector<int> temp, vector<vi> &ans, vec
 }
 
 void solve(void) {
-	vector<int> arr {3, 2, 1};
+	vector<int> arr {1, 2, 3};
 
-	sort(arr.begin(), arr.end());
+	// if there're duplicates or you want to generate lexicographically
+	// sort(arr.begin(), arr.end());
 
 	vector<vi> ans;
 	vector<bool> vis(arr.size());
