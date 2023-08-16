@@ -5,7 +5,7 @@ using namespace std;
 
 // DFS approach -> think in terms of DFS (with diagram)
 
-void Permutation (vector<int> const& arr, vector<int> temp, vector<vector<int>> &ans, vector<bool> &vis) {
+void Permutation (vector<int> const& arr, vector<int> temp, vector<vi> &ans, vector<bool> &vis) {
     int N = arr.size();
     
     if (temp.size() == N) {
