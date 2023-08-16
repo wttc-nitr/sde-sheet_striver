@@ -5,6 +5,8 @@ using namespace std;
 
 // DFS approach -> think in terms of DFS (with diagram)
 
+// Time n Space Complexity: https://leetcode.com/problems/permutations/discuss/993970/Python-4-Approaches-:-Visuals-+-Time-Complexity-Analysis
+
 void Permutation (vector<int> const& arr, vector<int> temp, vector<vi> &ans, vector<bool> &vis) {
     int N = arr.size();
     
@@ -46,14 +48,14 @@ void solve(void) {
 	vector<vi> ans;
 	vector<bool> vis(arr.size());
 
-    Permutation(arr, {}, ans, vis);
+	Permutation(arr, {}, ans, vis);
 
-    for (auto vec : ans) {
-    	for (auto i : vec)
-    		cout << i << ' ';
+	for (auto vec : ans) {
+		for (auto i : vec)
+			cout << i << ' ';
 
-    	cout << '\n';
-    }
+		cout << '\n';
+	}
 }
 
 int main(void) {
