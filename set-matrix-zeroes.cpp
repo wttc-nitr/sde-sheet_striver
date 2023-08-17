@@ -1,7 +1,13 @@
 #include "bits/stdc++.h"
 using namespace std;
 
-// see notes for logic
+/*
+    somewhat better solution is:
+    use two auxillary arrays to store the location of zeroes (one for rows and other for column);
+    SC -> O(N);
+
+    Below solution is O(1) space.
+*/
 
 void setZeroes(vector<vector<int>>& matrix) {
     int n = matrix.size(), m = matrix[0].size();
